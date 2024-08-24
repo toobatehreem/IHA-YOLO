@@ -18,3 +18,6 @@ from ultralytics import YOLO
 model = YOLO("IHA-YOLO/ultralytics/cfg/models/iha-yolo/iha-yolom.yaml").load("yolov10m.pt")
 results = model.train(data="data.yaml", epochs=200)
 ```
+
+### Acknowledgement
+This repository is a modified version of the YOLOv10 code provided by [Ultralytics](https://github.com/ultralytics/ultralytics).
