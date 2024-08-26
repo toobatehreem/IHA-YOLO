@@ -51,8 +51,8 @@ print(f"Mean Average Precision @ .70   : {metrics.box.map75}")
 ## Performance Comparison
 
 ### Detection Performance Comparison Table
-[chart.11.1.1 (1).pdf](https://github.com/user-attachments/files/16749365/chart.11.1.1.1.pdf)
-
+![image](https://github.com/user-attachments/assets/4f53c577-1a20-4c10-bbb3-482e3497d4f9)
+*Speed (fps) vs.  Average mAP50,  averaged across five challenging cell detection datasets. Our IHA-YOLO (in \textcolor{red}{red}) achieves state-of-the-art Average mAP50 while operating at high speed. Additionally, detailed mAP comparisons at various IoU thresholds with the baseline YOLOv10 on BOrg, MoNuSAC, and CoNSeP show that our IHA-YOLO demonstrates excellent performance gains across diverse datasets and IoU thresholds, particularly at tighter IoU criteria, while operating at a similar speed. Inference speed for all methods is reported under fair settings, with a 640×640 image resolution on a single RTX 4090 24GB GPU.*
 ![image](https://github.com/user-attachments/assets/03f622f4-8288-42a1-9ec2-54640809d6e3)
 
 *Detection performance comparison of IHA-YOLO vs. various models on Mouse Embryos and BCCD datasets. The models listed in the last two sections were evaluated by us for the first time on these datasets. The highest values are highlighted in red, and the second highest in blue.*
