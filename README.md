@@ -51,8 +51,7 @@ print(f"Mean Average Precision @ .70   : {metrics.box.map75}")
 ## Performance Comparison
 
 ### Detection Performance Comparison Table
-
-![Download Performance Chart](https://github.com/user-attachments/files/16749227/chart.11.1.1.pdf)
+[chart.11.1.1 (1).pdf](https://github.com/user-attachments/files/16749365/chart.11.1.1.1.pdf)
 
 ![image](https://github.com/user-attachments/assets/03f622f4-8288-42a1-9ec2-54640809d6e3)
 
