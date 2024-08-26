@@ -67,8 +67,3 @@ print(f"Mean Average Precision @ .70   : {metrics.box.map75}")
 
 This repository is a modified version of the YOLOv10 code provided by [Ultralytics](https://github.com/ultralytics/ultralytics).
 ```
-
-### Changes Made:
-- Converted the table to a Markdown format that is supported by GitHub.
-- Added a header for the performance comparison section.
-- Ensured the correct Markdown table formatting with proper column alignment.
