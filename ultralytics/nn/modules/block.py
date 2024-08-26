@@ -55,7 +55,7 @@ __all__ = (
    "ISA",
    "CEIB",
    "C2fCEIB",
-   "CIFF"
+   "HybridMLPCEIB"
 )
 
 
