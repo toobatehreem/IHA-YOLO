@@ -1,6 +1,3 @@
-Here's your modified Markdown content:
-
-```markdown
 # IHA-YOLO
 
 Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection and Counting.
