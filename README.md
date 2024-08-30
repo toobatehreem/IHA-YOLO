@@ -80,4 +80,4 @@ print(f"Mean Average Precision @ .70   : {metrics.box.map75}")
 ## Acknowledgements
 
 This repository is a modified version of the YOLOv10 code provided by [Ultralytics](https://github.com/ultralytics/ultralytics).
-```
+
