@@ -18,7 +18,9 @@ Multi-class cell detection and counting are vital tasks in numerous biomedical a
 
 *Detection performance comparison of IHA-YOLO vs. various models on Mouse Embryos and BCCD datasets. The models listed in the last two sections were evaluated by us for the first time on these datasets. The highest values are highlighted in red, and the second highest in blue.*
 
-## Installation
+## Getting Started
+
+### Installation
 
 To set up the environment and install the required packages, run the following commands:
 
@@ -31,7 +33,7 @@ cd ultralytics
 pip install -e .
 ```
 
-## Training
+### Training
 
 To train the IHA-YOLO model, use the following code snippet:
 
@@ -45,7 +47,7 @@ model = YOLO("IHA-YOLO/ultralytics/cfg/models/iha-yolo/iha-yolom.yaml").load("yo
 results = model.train(data="data.yaml", epochs=200)
 ```
 
-## Testing
+### Testing
 
 To evaluate the trained model, you can use the following code:
 
