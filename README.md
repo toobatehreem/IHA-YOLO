@@ -7,6 +7,11 @@ Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-t
 Multi-class cell detection and counting are vital tasks in numerous biomedical applications, particularly in cell biology. The development of the YOLO object detection model has significantly advanced the field of real-time object detection, providing accurate and efficient multi-class detection. However, existing architectures often face challenges in precisely localizing and classifying small, densely clustered cells within complex biological images. Real-time and end-to-end cell detection and counting approaches face significant challenges due to limited data availability, overlapping tiny objects, diverse cell types, class imbalances, and subtle yet critical variations in cell size and shape. In this paper, we introduce Inter-Head Attention (IHA)-YOLO, a novel model that proposes an inter-head attention module to enhance global representation learning, thereby improving the model's ability to understand and process contextual information across the entire input feature map. This method is particularly effective in detecting small cells and sub-cell structures within constrained medical image datasets. Through extensive experiments on five publicly available datasets, IHA-YOLO demonstrates superior performance compared to state-of-the-art cell detection and counting methods, offering 13\% faster inference and an average absolute improvement of 2.03%  across five datasets.  Moreover, our model achieves relative mAP50:95 improvements of 5.33%,  6.74%, and 2.75% over the baseline YOLOv10 on the BOrg, MoNuSAC, and CoNSeP datasets, respectively, while maintaining a similar speed.
 
 ## Overview
+![image](https://github.com/user-attachments/assets/a24c9230-f09a-4768-b32a-bb7e45a35936)
+
+![image](https://github.com/user-attachments/assets/cb6f9f8b-a45e-4114-8cd3-ae10f41c8fe6)
+
+![image](https://github.com/user-attachments/assets/22338e27-f653-40a4-83fb-d9be010f987e)
 
 
 ## Performance Comparison
