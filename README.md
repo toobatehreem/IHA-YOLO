@@ -17,7 +17,10 @@ Multi-class cell detection and counting are vital tasks in numerous biomedical a
 ## Performance Comparison
 
 ### Detection Performance Comparison Table
-![image](https://github.com/user-attachments/assets/4f53c577-1a20-4c10-bbb3-482e3497d4f9)
+
+![image](https://github.com/user-attachments/assets/de5ef97d-b49a-43b9-b54c-905552b7fdbb)
+
+![image](https://github.com/user-attachments/assets/c6fb534b-928a-4bbb-ad71-576db872957d)
 
 ### Quantitative Results
 
