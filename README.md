@@ -18,6 +18,8 @@ Multi-class cell detection and counting are vital tasks in numerous biomedical a
 
 *Detection performance comparison of IHA-YOLO vs. various models on Mouse Embryos and BCCD datasets. The models listed in the last two sections were evaluated by us for the first time on these datasets. The highest values are highlighted in red, and the second highest in blue.*
 
+### Qualitative Results
+
 ![Qualitative Results](https://github.com/user-attachments/assets/890890f2-4f69-452e-9e0d-8e117bd13902)
 
 ## Getting Started
