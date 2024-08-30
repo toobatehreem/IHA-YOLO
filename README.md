@@ -2,6 +2,22 @@
 
 Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection and Counting.
 
+## Abstract
+
+Multi-class cell detection and counting are vital tasks in numerous biomedical applications, particularly in cell biology. The development of the YOLO object detection model has significantly advanced the field of real-time object detection, providing accurate and efficient multi-class detection. However, existing architectures often face challenges in precisely localizing and classifying small, densely clustered cells within complex biological images. Real-time and end-to-end cell detection and counting approaches face significant challenges due to limited data availability, overlapping tiny objects, diverse cell types, class imbalances, and subtle yet critical variations in cell size and shape. In this paper, we introduce Inter-Head Attention (IHA)-YOLO, a novel model that proposes an inter-head attention module to enhance global representation learning, thereby improving the model's ability to understand and process contextual information across the entire input feature map. This method is particularly effective in detecting small cells and sub-cell structures within constrained medical image datasets. Through extensive experiments on five publicly available datasets, IHA-YOLO demonstrates superior performance compared to state-of-the-art cell detection and counting methods, offering 13\% faster inference and an average absolute improvement of 2.03%  across five datasets.  Moreover, our model achieves relative mAP50:95 improvements of 5.33%,  6.74%, and 2.75% over the baseline YOLOv10 on the BOrg, MoNuSAC, and CoNSeP datasets, respectively, while maintaining a similar speed.
+
+## Overview
+
+
+## Performance Comparison
+
+### Detection Performance Comparison Table
+![image](https://github.com/user-attachments/assets/4f53c577-1a20-4c10-bbb3-482e3497d4f9)
+*Speed (fps) vs.  Average mAP50,  averaged across five challenging cell detection datasets. Our IHA-YOLO (in \textcolor{red}{red}) achieves state-of-the-art Average mAP50 while operating at high speed. Additionally, detailed mAP comparisons at various IoU thresholds with the baseline YOLOv10 on BOrg, MoNuSAC, and CoNSeP show that our IHA-YOLO demonstrates excellent performance gains across diverse datasets and IoU thresholds, particularly at tighter IoU criteria, while operating at a similar speed. Inference speed for all methods is reported under fair settings, with a 640×640 image resolution on a single RTX 4090 24GB GPU.*
+![image](https://github.com/user-attachments/assets/03f622f4-8288-42a1-9ec2-54640809d6e3)
+
+*Detection performance comparison of IHA-YOLO vs. various models on Mouse Embryos and BCCD datasets. The models listed in the last two sections were evaluated by us for the first time on these datasets. The highest values are highlighted in red, and the second highest in blue.*
+
 ## Installation
 
 To set up the environment and install the required packages, run the following commands:
@@ -48,14 +64,7 @@ print(f"Mean Average Precision @ .50   : {metrics.box.map50}")
 print(f"Mean Average Precision @ .70   : {metrics.box.map75}")
 ```
 
-## Performance Comparison
 
-### Detection Performance Comparison Table
-![image](https://github.com/user-attachments/assets/4f53c577-1a20-4c10-bbb3-482e3497d4f9)
-*Speed (fps) vs.  Average mAP50,  averaged across five challenging cell detection datasets. Our IHA-YOLO (in \textcolor{red}{red}) achieves state-of-the-art Average mAP50 while operating at high speed. Additionally, detailed mAP comparisons at various IoU thresholds with the baseline YOLOv10 on BOrg, MoNuSAC, and CoNSeP show that our IHA-YOLO demonstrates excellent performance gains across diverse datasets and IoU thresholds, particularly at tighter IoU criteria, while operating at a similar speed. Inference speed for all methods is reported under fair settings, with a 640×640 image resolution on a single RTX 4090 24GB GPU.*
-![image](https://github.com/user-attachments/assets/03f622f4-8288-42a1-9ec2-54640809d6e3)
-
-*Detection performance comparison of IHA-YOLO vs. various models on Mouse Embryos and BCCD datasets. The models listed in the last two sections were evaluated by us for the first time on these datasets. The highest values are highlighted in red, and the second highest in blue.*
 
 ![Qualitative Results](https://github.com/user-attachments/assets/890890f2-4f69-452e-9e0d-8e117bd13902)
 
