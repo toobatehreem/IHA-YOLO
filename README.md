@@ -16,7 +16,7 @@ Multi-class cell detection and counting are vital tasks in numerous biomedical a
 
 ## Performance Comparison
 
-### Detection Performance Comparison Table
+### Average mAP vs FPS
 
 ![image](https://github.com/user-attachments/assets/a1592101-5de5-4368-b2a1-700c4ae1456a)
 
