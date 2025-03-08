@@ -1,35 +1,33 @@
 # IHA-YOLO
 
-Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection and Counting.
+Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection accepted at ISBI 2025.
 
 ## Abstract
 
-Multi-class cell detection and counting are vital tasks in numerous biomedical applications, particularly in cell biology. The development of the YOLO object detection model has significantly advanced the field of real-time object detection, providing accurate and efficient multi-class detection. However, existing architectures often face challenges in precisely localizing and classifying small, densely clustered cells within complex biological images. Real-time and end-to-end cell detection and counting approaches face significant challenges due to limited data availability, overlapping tiny objects, diverse cell types, class imbalances, and subtle yet critical variations in cell size and shape. In this paper, we introduce Inter-Head Attention (IHA)-YOLO, a novel model that proposes an inter-head attention module to enhance global representation learning, thereby improving the model's ability to understand and process contextual information across the entire input feature map. This method is particularly effective in detecting small cells and sub-cell structures within constrained medical image datasets. Through extensive experiments on five publicly available datasets, IHA-YOLO demonstrates superior performance compared to state-of-the-art cell detection and counting methods, offering 13\% faster inference and an average absolute improvement of 2.03%  across five datasets.  Moreover, our model achieves relative mAP50:95 improvements of 5.33%,  6.74%, and 2.75% over the baseline YOLOv10 on the BOrg, MoNuSAC, and CoNSeP datasets, respectively, while maintaining a similar speed.
+Multiclass cell detection is a crucial task in numerous biomedical applications, particularly in cell biology. The development of YOLO object detection models has advanced the field of real-time detection, but it is still struggling with challenges in medical imaging due to limited data availability, overlapping tiny objects, diverse cell types, and class imbalances. In this paper, we introduce Inter-Head Attention (IHA)-YOLO, a novel model that proposes an inter-head self-attention block to enhance global representation learning, thereby improving the contextual understanding across feature maps and performing effective detection of small cells and sub-cell structures in medical images. Through extensive experiments on five publicly available datasets, IHA-YOLO outperforms the state-of-the-art methods, achieving an average absolute mAP50 improvement of 2.03% and a 13% faster inference rate. In addition to cell detection, we adapt IHA-YOLO for cell counting to demonstrate its effectiveness. 
 
 ## Overview
-![image](https://github.com/user-attachments/assets/4e77e45a-7ad4-4f32-8869-0b28894dfbf3)
-
-![image](https://github.com/user-attachments/assets/cb6f9f8b-a45e-4114-8cd3-ae10f41c8fe6)
-
-![image](https://github.com/user-attachments/assets/22338e27-f653-40a4-83fb-d9be010f987e)
+![image](https://github.com/user-attachments/assets/c49940c3-2460-47cd-98b6-65814c3fda7a)
 
 
 ## Performance Comparison
 
 ### Average mAP vs FPS
+![image](https://github.com/user-attachments/assets/7b50f9da-4642-4597-b2d2-e67455367014)
 
-![image](https://github.com/user-attachments/assets/a1592101-5de5-4368-b2a1-700c4ae1456a)
+
+## Results
+### Cell Detection
+![image](https://github.com/user-attachments/assets/f7bace74-506b-412e-8ee2-30f1f5b119e7)
 
 
-### Quantitative Results
+### Cell Counting
+![image](https://github.com/user-attachments/assets/67b08d2b-49a6-45c7-b271-e26e26b63b5d)
 
-![image](https://github.com/user-attachments/assets/de5ef97d-b49a-43b9-b54c-905552b7fdbb)
 
-![image](https://github.com/user-attachments/assets/c6fb534b-928a-4bbb-ad71-576db872957d)
+### Qualitative Visualization
 
-### Qualitative Results
-
-![Qualitative Results](https://github.com/user-attachments/assets/890890f2-4f69-452e-9e0d-8e117bd13902)
+![QualitativeResults1 (1)](https://github.com/user-attachments/assets/0f03c9da-4406-4f17-9c39-e83362b79e5c)
 
 ## Getting Started
 
