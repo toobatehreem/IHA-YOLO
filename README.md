@@ -1,6 +1,6 @@
 # IHA-YOLO
 
-Official PyTorch implementation of **IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection, accepted at ISBI 2025.
+Official PyTorch implementation for paper "**IHA-YOLO**: Inter-Head Attention for Real-time Cell Detection", accepted at ISBI 2025.
 
 ## Abstract
 
